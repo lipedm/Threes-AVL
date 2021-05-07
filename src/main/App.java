@@ -7,7 +7,7 @@ public class App {
 
         Console app = new Console();
         app = app.mainMenu(app);
-        System.out.println("A aplicação foi finalizada, até mais :)");
+        System.out.println("A aplicação foi finalizada, até mais :)\n\n");
     }
 
 }

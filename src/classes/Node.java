@@ -5,7 +5,7 @@ public class Node {
     public int height = 1;
     public int value;
 
-    public Node (int val) {
+    public Node(int val) {
         this.value = val;
     }
 }
