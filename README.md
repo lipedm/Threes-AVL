@@ -1,6 +1,6 @@
 # Implementação de Árvores AVL
 
-  Métodos disponíveis:
+  Métodos disponíveis:<br />
   Rotações direita e esquerda <br />
   Balanceamento <br />
   Inserção <br />
