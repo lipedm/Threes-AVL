@@ -31,7 +31,7 @@ public class Console {
                 default:
                     System.out.println("Selecione uma opcao valida! (:");
             }
-        } while (selection != 5);
+        } while (selection != 4);
 
         insert.close();
         return console;
