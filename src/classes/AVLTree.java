@@ -2,7 +2,7 @@ package classes;
 
 import java.util.*;
 
-public class AVLThree {
+public class AVLTree {
 
     private int height (Node N) {
         if (N == null)

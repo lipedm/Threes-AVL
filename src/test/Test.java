@@ -9,7 +9,7 @@ public class Test {
     }
 
     public static void main(String args[]) {
-        AVLThree t = new AVLThree();
+        AVLTree t = new AVLTree();
         Node root = null;
         while (true) {
             System.out.println("(1) Inserir");
