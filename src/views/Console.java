@@ -1,6 +1,5 @@
 package views;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Console {
@@ -13,12 +12,12 @@ public class Console {
 
         do {
 
-            System.out.println("[1] Inserção");
+            System.out.println("[1] Insercao");
             System.out.println("[2] Busca");
-            System.out.println("[3] Remoção");
+            System.out.println("[3] Remocao");
             System.out.println("[4] Sair");
 
-            System.out.print("Seleciona uma opção: ");
+            System.out.print("Seleciona uma opcao: ");
             selection = insert.nextInt();
             switch (selection) {
                 case 1:
@@ -30,7 +29,7 @@ public class Console {
                 case 4:
                     return console;
                 default:
-                    System.out.println("Selecione uma opção válida! (:");
+                    System.out.println("Selecione uma opcao valida! (:");
             }
         } while (selection != 5);
 
