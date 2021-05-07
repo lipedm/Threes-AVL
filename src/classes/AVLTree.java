@@ -9,6 +9,21 @@ public class AVLTree {
             return 0;
         return N.height;
     }
+    
+    public Node search(Node node, int value) {
+    	if(node == null) {
+    		System.out.println("Nodo Não Encontrado");
+    		return node;
+    	}else if(value == node.value) {
+    		System.out.println("Nodo Encontrado");
+    		return node;
+    	}else if(value < node.value) {
+    		search(node.left, value);
+    	}else if(value > node.value) {
+    		search(node.right, value);
+    	}
+    	return node;
+    }
 
     public Node insert(Node node, int value) {        
         if (node == null) {

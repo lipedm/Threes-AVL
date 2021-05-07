@@ -14,6 +14,7 @@ public class Test {
         while (true) {
             System.out.println("(1) Inserir");
             System.out.println("(2) Deletar");
+            System.out.println("(3) Buscar");
 
             try {
                 BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
@@ -25,7 +26,10 @@ public class Test {
                 } else if (Integer.parseInt(s) == 2) {
                     System.out.print("Valor para deletar: ");
                     root = t.deleteNode(root, Integer.parseInt(bufferRead.readLine()));
-                } else {
+                } else if(Integer.parseInt(s) == 3){
+                	System.out.println("Valor para pesquisa");
+                	root = t.search(root, Integer.parseInt(bufferRead.readLine()));
+                }else {
                     System.out.println("Escolha inválida, tente novamente!");
                     continue;
                 }
