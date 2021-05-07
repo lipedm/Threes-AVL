@@ -20,13 +20,13 @@ public class Test {
                 String s = bufferRead.readLine();
 
                 if (Integer.parseInt(s) == 1) {
-                    System.out.print("Value to be inserted: ");
+                    System.out.print("Valor para inserir: ");
                     root = t.insert(root, Integer.parseInt(bufferRead.readLine()));
                 } else if (Integer.parseInt(s) == 2) {
-                    System.out.print("Value to be deleted: ");
+                    System.out.print("Valor para deletar: ");
                     root = t.deleteNode(root, Integer.parseInt(bufferRead.readLine()));
                 } else {
-                    System.out.println("Invalid choice, try again!");
+                    System.out.println("Escolha inválida, tente novamente!");
                     continue;
                 }
 
