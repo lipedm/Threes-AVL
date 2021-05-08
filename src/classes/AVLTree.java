@@ -15,23 +15,21 @@ public class AVLTree {
         return searchPath;
     }
 
-    private void setSearchPath(String str) {
-        this.searchPath = str;
-    }
-
     public Node search(Node node, int value) {
-        searchPath += node.value + " > ";
-
+        
         if (value == node.value) {
             System.out.println("\nNodo Encontrado: " + node.value);
+            searchPath += node.value;
             return node;
         } else if (value < node.value) {
+            searchPath += node.value + " > ";
             search(node.left, value);
         } else if (value > node.value) {
+            searchPath += node.value + " > ";
             search(node.right, value);
         }
-
-        setSearchPath("");
+        System.out.println(searchPath);
+        searchPath = "";
         return node;
     }
 
