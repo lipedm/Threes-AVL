@@ -30,8 +30,12 @@ public class Console {
                     break;
 
                 case 2:
-                    System.out.println("Valor para busca");
-                    root = t.search(root, insert.nextInt());
+                    if (root != null) {
+                        System.out.println("Valor para busca");
+                        root = t.search(root, insert.nextInt());
+
+                        System.out.println(t.getSearchPath());
+                    }
                     break;
 
                 case 3:

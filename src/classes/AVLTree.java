@@ -3,6 +3,7 @@ package classes;
 import java.util.*;
 
 public class AVLTree {
+    private String searchPath = "";
 
     private int height(Node N) {
         if (N == null)
@@ -10,18 +11,27 @@ public class AVLTree {
         return N.height;
     }
 
+    public String getSearchPath() {
+        return searchPath;
+    }
+
+    private void setSearchPath(String str) {
+        this.searchPath = str;
+    }
+
     public Node search(Node node, int value) {
-        if (node == null) {
-            System.out.println("\nNodo nao encontrado");
-            return node;
-        } else if (value == node.value) {
-            System.out.println("\nNodo Encontrado: ");
+        searchPath += node.value + " > ";
+
+        if (value == node.value) {
+            System.out.println("\nNodo Encontrado: " + node.value);
             return node;
         } else if (value < node.value) {
             search(node.left, value);
         } else if (value > node.value) {
             search(node.right, value);
         }
+
+        setSearchPath("");
         return node;
     }
 
